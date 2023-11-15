@@ -1,0 +1,32 @@
+[project]
+name = "buildkit"
+description = "A simple build system and package manager for C and C++ projects"
+version = "0.1.0"
+authors = [{ name = "Keyboard Slayer" }]
+maintainers = [{ name = "Keyboard Slayer" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Programming Language :: Assembly",
+    "Programming Language :: C",
+    "Programming Language :: C++",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Build Tools",
+
+]
+
+[build-system]
+requires = ["setuptools ~= 68.2"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+buildkit = "buildkit:main"
+bk = "buildkit:main"
+
+[tool.setuptools]
+packages = ["buildkit"]
